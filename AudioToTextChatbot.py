@@ -13,7 +13,7 @@ audio_file = st.file_uploader("Upload an audio file", type=["wav", "mp3", "mp4",
 
 
 # Replace with your API key
-aai.settings.api_key = st.secrest['ASSEMBLY_API_Key']
+aai.settings.api_key = st.secrets['ASSEMBLY_API_Key']
 
 # URL of the file to transcribe
 # FILE_URL = "https://assembly.ai/wildfires.mp3"
