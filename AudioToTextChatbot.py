@@ -8,7 +8,6 @@ import streamlit as st
 import assemblyai as aai
 
 st.title("AudioToTextChatBot")
-audio_file = st.file_uploader("Upload an audio file", type=["wav", "mp3", "mp4", "m4a"])
 # audio_file = C:\Users\vrish\Documents\Sound recordings\Recording - Copy.mp3
 
 
@@ -17,6 +16,7 @@ aai.settings.api_key = st.secrets['ASSEMBLY_API_Key']
 
 # URL of the file to transcribe
 # FILE_URL = "https://assembly.ai/wildfires.mp3"
+audio_file = st.file_uploader("Upload an audio file", type=["wav", "mp3", "mp4", "m4a"])
 
 
 
